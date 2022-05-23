@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+<script src="login.js"></script>
+      <style>
+             body{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                   margin-top: 200px;
+                   background-color: rgb(255, 255, 255);
+            }
+            #sign{
+                  box-shadow: 8px 8px 8px rgb(200, 200, 200);
+            }
+      </style>
+</head>
+<body class="d-flex flex-column">
+      <h2 class="header mb-4"><b>Log in page</b></h2>
+      <div class="col-10 col-md-4 text-dark  fst-italic mx-md-auto ">
+            <div class="form-control d-grid p-5 bg-light border-1 text-dark fs-5  p-3" aria-autocomplete="on p-1" id="sign">
+                  <label for="" >Email/Username:</label>
+                  <input type="text" class="rounded border-1 p-1" id="emm">
+                  <small id="emerror"></small>
+                  <label for="">Password:</label>
+                  <input type="password" class="rounded border-1 p-1" id="psw" value="">
+                  <small id="pswerror"></small>
+                 <small> <input type="checkbox" onclick="showPassword()" class="form-check-input"> show password</small>
+                  <p class="text text-center text-danger">You don't have any account yet? <a href="signUp.html" class="">Sign up</a></p>
+                  <button class="btn btn-warning mt-3 w-50 fs-5 fw-bold mx-auto text" id="btn" onclick="infoFunc()">Log in</button>
+            </div>
+   </div>
+</body>
+<script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</html>

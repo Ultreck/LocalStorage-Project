@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dashboard</title>
+      <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+      
+      <style>
+            #pa2{
+                  justify-content: center;
+                  align-items: center;
+                  display: flex;
+                   margin-top: 220px;
+                   height: 300px;
+                   box-shadow: 8px 8px 8px rgb(183, 181, 181);
+
+            }
+      </style>
+</head>
+<body>
+      <h1 id="userName"></h1>
+     <div class="parent d-flex flex-column">
+           <ul class="mx-auto list-unstyled fs-5 d-flex my-4 bg-light active rounded">
+                 <li><a href="#" class="nav-link me-4 bg-warning rounded text-dark">Dashboard</a></li>
+                 <li><a href="#" class="nav-link me-4 text-dark">Contact</a></li>
+                 <li><a href="login.html" class="nav-link text-dark">Log out</a></li>
+           </ul>
+           <div class=" col-10 col-md-6 cotainer bg-light p-4 mx-auto text-dark fs-4 d-flex flex-column" id="pa2">
+
+
+           <p class="text" id="hd2"></p>
+           <marquee behavior="" direction="" class="fst-italic">You successfully login...</marquee>
+      </div>
+     </div>
+
+<script src="dash.js"></script>
+</body>
+<script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Client Side</title>
+      <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+      <script src="clientSide.js"></script>
+</head>
+<body class="container-fluid bg-info mh-100 w-100 my-5 mx-md-auto">
+   <div class="col-12 col-md-5 text-white bg-secondary p-5  fst-italic mx-md-auto">
+            <div class="form-control d-grid bg-secondary border-0 text-white fs-5 fw-bolder">
+                  <label for="" >First Name:</label>
+                  <input type="text" class="rounded border-0" id="firstname">
+                  <label for="">Last Name:</label>
+                  <input type="text" class="rounded border-0" id="lastname">
+                  <label for="">Contact:</label>
+                  <input type="text" class="rounded border-0" id="contact">
+                  <label for="">Email:</label>
+                  <input type="email" class="rounded border-0" id="email">
+                  <label for="">Address:</label>
+                  <textarea name="" id="address" cols="auto" rows="1"class="rounded border-0"></textarea>
+                  <label for="">Gender:</label>
+                  <select name="gender" id="gender" class="rounded border-0">
+                        <option value="Choose">Choose</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                  </select>
+                  <button class="btn btn-warning mt-3 w-50 fs-5 fw-bold mx-auto text" id="btn" onclick="check()"><b>Submit</b></button>
+            </div>
+       
+   </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+     <link rel="stylesheet" href="bootstrap-5.0.2-dist/js/jquery">
+      <script src="class.js" defer></script>
+</head>
+<body class="pt-5" onload="objectIteration()">
+      <div class="col-10 col-md-4 text-white p-2 fst-italic mx-auto">
+            <div class="form-control d-grid bg-secondary text-white fs-4 mx-auto" aria-autocomplete="on">
+                  <label for="" >First Name:</label>
+                  <input type="text" class="rounded border-0" id="fn">
+                  <label for="">Last Name:</label>
+                  <input type="text" class="rounded border-0" id="ln">
+                  <label for="">Contact:</label>
+                  <input type="text" class="rounded border-0" id="ct">
+                  <label for="">Email:</label>
+                  <input type="email" class="rounded border-0" id="em">
+                  <label for="">Address:</label>
+                  <textarea name="" id="ad" cols="auto" rows="1"class="rounded border-0"></textarea>
+                  <label for="">Gender:</label>
+                  <select name="gender" id="gn" class="rounded border-0">
+                        <option value="Choose">Choose</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                  </select>
+                  <button class="btn btn-warning mt-3 w-50 fs-5 fw-bold mx-auto text" id="btn" onclick="checkPush()"><b>Submit</b></button>
+            </div>
+   </div>
+   <div class="container text-center mt-5 ">
+      <h1><b>Employee's List</b></h1>
+      <table class="table table-bordered table-striped mt-3">
+            <thead id="header" class="">
+                  <tr>
+                        <th>S/n</th>
+                        <th>First Name</th>   
+                        <th>Last Name</th>
+                        <th>Contact</th>
+                        <th>E-mail</th>
+                        <th>Address</th>
+                        <th>Gender</th>
+                        <th>Delete</th>
+                        <th>Edit</th>
+                  </tr>
+            </thead>
+            <tbody id="display"></tbody>
+      </table>
+</div>
+<!-- 
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
+data-bs-target="#delete">modal Example</button> -->
+
+
+<div class="modal  fade" id="edit" tabindex="-1" aria-labelledby="deleteLabel" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-content">
+                  <div class="modal-header">
+                        <h5 class="modal-title text-center" id="deleteLabel">Edit the person's data?</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                  </div>
+                  <div class="modal-body">
+                        <div class="form-control d-grid bg-secondary border-0 text-white fs-5 " aria-autocomplete="on">
+                              <label for="" >First Name:</label>
+                              <input type="text" class="rounded border-0" id="fn2">
+                              <label for="">Last Name:</label>
+                              <input type="text" class="rounded border-0" id="ln2">
+                              <label for="">Contact:</label>
+                              <input type="text" class="rounded border-0" id="ct2">
+                              <label for="">Email:</label>
+                              <input type="email" class="rounded border-0" id="em2">
+                              <label for="">Address:</label>
+                              <textarea name="" id="ad2" cols="auto" rows="1"class="rounded border-0"></textarea>
+                              <label for="">Gender:</label>
+                              <select name="gender" id="gn2" class="rounded border-0">
+                                    <option value="Choose">Choose</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Others">Others</option>
+                              </select>
+                        </div>
+                  </div>
+                  <div class="modal-footer">
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary" onclick="updateData()">Save Changes?</button>
+                  </div>
+            </div>
+      </div>
+</div>
+
+
+
+<!-- <div>
+      <ion-icon name="trash" class=""></ion-icon>
+      <ion-icon name="create" class=""></ion-icon>
+</div> -->
+
+</body>
+<script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</html>

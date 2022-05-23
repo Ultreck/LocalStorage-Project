@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Registeration Page</title>
+      <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+      <script src="signUp.js" defer></script>
+      <style>
+            body{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                   margin-top: 50px;
+                   background-color: rgb(255, 255, 255);
+            }
+            #twodiv{
+                  background-color: rgb(241, 241, 241);
+                  box-shadow: 8px 8px 8px rgb(183, 181, 181);
+            }
+            input{
+                  background-color: rgb(255, 255, 255);
+            }
+      </style>
+</head>
+<body class="d-flex flex-column">
+      <h2 class="header mb-4"><b>Sign up page</b></h2>
+      <div class="col-10 col-md-4 fst-italic mx-md-auto " id="container ">
+            <form class="form-control d-grid border-0 text-dark fw-bold" aria-autocomplete="on" id="twodiv">
+                  <label for="" >First Name:</label>
+                  <input type="text" class="form-control rounded border-0" id="fn" onchange="">
+                  <small class="" id="fnsn"></small>
+                  <label for="">Last Name:</label>
+                  <input type="text" class="form-control rounded border-0" id="ln" onchange="">
+                  <small class="sm" id="lnsn"></small>
+                  <label for="">Contact:</label>
+                  <input type="text" class="form-control rounded border-0" id="ct" onchange="">
+                 <small class="sm" id="ctsn"></small>
+                  <label for="">Email:</label>
+                  <input type="email" class="form-control rounded border-0" id="em" onchange="">
+                 <small class="sm" id="emsn"></small>
+                  <label for="">Password:</label>
+                  <input type="password" class="form-control rounded border-0 mb-1" id="ps" onchange="">
+                  <!-- <small> </small> -->
+                 <small class="sm" id="pssn"><input type="checkbox" onclick="showPassword()" class="form-check-input">show password</small>
+                  <label for="">Address:</label>
+                  <textarea name="" id="ad" cols="auto" rows="1"class="form-control rounded border-0" onchange=""></textarea>
+                  <small class="sm" id="adsn"></small>
+                  <label for="">Gender:</label>
+                  <select name="gender" id="gn" class="form-control rounded border-0" onchange="">
+                        <option value=""></option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                  </select>
+                  <small id="gnsn"></small>
+                  <p class="text text-center">Aleady have an account? <a href="login.html" class="text-primary">Log in</a></p>
+                  <button class="btn btn-warning w-50 fs-5 fw-bold mx-auto text" id="btn" onclick="createObject()"><a href="#" class="text-dark text-decoration-none">Sign up</a></button><br>
+            </form>
+   </div>
+
+</body>
+<script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</html>
